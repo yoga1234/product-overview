@@ -1,0 +1,45 @@
+.navbar-container {
+  width: 90%;
+  max-width: 1225px;
+  border-bottom: 1px solid #000;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding-bottom: 20px;
+}
+.left-side {
+  flex: 1;
+}
+.navbar-logo {
+  margin-top: 30px;
+  font-family: var(--font-main);
+  opacity: 90%;
+}
+.middle-side {
+  flex: 4;
+}
+.middle-side > ul {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+  margin-top: 43px;
+}
+.middle-side > ul > li {
+  list-style: none;
+  font-family: var(--font-main);
+  color: var(--color-grayishblue);
+}
+.right-side {
+  flex: 1;
+}
+.navbar-cart {
+  margin-bottom: 13px;
+  width: 25px;
+}
+.navbar-profile {
+  width: 45px;
+  border: 3px solid hsl(26, 100%, 55%);
+  border-radius: 50%;
+  margin-top: 25px;
+  margin-left: 35px;
+}
