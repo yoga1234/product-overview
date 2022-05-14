@@ -1,0 +1,29 @@
+.left-container {
+  flex: 1;
+}
+.main-image {
+  margin-top: 75px;
+}
+.main-image-overview {
+  overflow: hidden;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin: 5px;
+}
+.mini-image {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.mini-image img {
+  border-radius: 20px;
+  width: 125px;
+  cursor: pointer;
+}
+.mini-image img:hover {
+  opacity: 80%;
+  border: 3px solid hsl(26, 100%, 55%);
+}

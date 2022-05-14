@@ -15,6 +15,9 @@ const RightSide = () => {
       <span>50%</span>
       <span>$250.00</span> {/* this should be stripped */}
       {/* this is counter, minus button and plus button */}
+      <button>-</button>
+      <span>0</span>
+      <button>+</button>
       <button>Add to cart</button>
     </div>
   );

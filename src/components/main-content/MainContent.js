@@ -5,7 +5,7 @@ import RightSide from "./right-side/RightSide";
 
 const MainContent = () => {
   return (
-    <div>
+    <div className="main-content">
       <LeftSide />
       <RightSide />
     </div>
