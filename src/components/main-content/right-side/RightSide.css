@@ -1,3 +1,18 @@
 .right-container {
   flex: 1;
 }
+.company-name {
+  font-family: var(--font-main);
+  font-size: 18px;
+  color: hsl(26, 100%, 55%);
+}
+.product-name {
+  font-family: var(--font-main);
+  font-size: 38px;
+  width: 430px;
+}
+.right-container p {
+  font-family: var(--font-main);
+  font-size: 16px;
+  color: hsl(219, 9%, 45%);
+}
