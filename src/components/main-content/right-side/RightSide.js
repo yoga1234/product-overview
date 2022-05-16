@@ -11,10 +11,9 @@ const RightSide = () => {
         Featuring a durable rubber outer sole, they'll withstand everything the
         weather can offer.
       </p>
-      <span>$125.00</span>
-      <span>50%</span>
-      <span>$250.00</span> {/* this should be stripped */}
-      {/* this is counter, minus button and plus button */}
+      <span className="current-price">$125.00</span>
+      <span className="total-discount">50%</span>
+      <span className="product-price">$250.00</span>
       <button>-</button>
       <span>0</span>
       <button>+</button>

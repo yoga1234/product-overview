@@ -16,3 +16,24 @@
   font-size: 16px;
   color: hsl(219, 9%, 45%);
 }
+.current-price {
+  font-family: var(--font-main);
+  font-size: 28px;
+  font-weight: 700;
+}
+.total-discount {
+  font-family: var(--font-main);
+  font-size: 18px;
+  background-color: hsl(25, 100%, 94%);
+  color: hsl(26, 100%, 55%);
+  font-weight: 700;
+  padding: 7px;
+  border-radius: 10px;
+}
+.product-price {
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 18px;
+  color: hsl(220, 14%, 75%);
+  text-decoration: line-through;
+}
