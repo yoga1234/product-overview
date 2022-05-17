@@ -37,3 +37,13 @@
   color: hsl(220, 14%, 75%);
   text-decoration: line-through;
 }
+.add-to-cart {
+  padding: 15px 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(26, 100%, 55%);
+}
+.add-to-cart img {
+  width: 15px;
+  fill: #fff;
+}
