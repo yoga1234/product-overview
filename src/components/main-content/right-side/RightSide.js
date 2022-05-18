@@ -12,18 +12,22 @@ const RightSide = () => {
         Featuring a durable rubber outer sole, they'll withstand everything the
         weather can offer.
       </p>
-      <span className="current-price">$125.00</span>
-      <span className="total-discount">50%</span>
-      <span className="product-price">$250.00</span>
-      <div className="counter">
-        <button className="minus-button">-</button>
-        <span className="product-counter">0</span>
-        <button className="plus-button">+</button>
+      <div className="price-and-discount">
+        <span className="current-price">$125.00</span>
+        <span className="total-discount">50%</span>
       </div>
-      <button className="add-to-cart">
-        <img src={cartWhite} alt="cart" />
-        &nbsp; Add to cart
-      </button>
+      <span className="product-price">$250.00</span>
+      <div className="counter-cart-container">
+        <div className="counter">
+          <button className="minus-button">-</button>
+          <span className="product-counter">0</span>
+          <button className="plus-button">+</button>
+        </div>
+        <button className="add-to-cart">
+          <img src={cartWhite} alt="cart" />
+          &nbsp; Add to cart
+        </button>
+      </div>
     </div>
   );
 };
