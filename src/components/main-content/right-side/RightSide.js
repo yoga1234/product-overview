@@ -1,5 +1,5 @@
 import React from "react";
-import { cartWhite, iconMinus, iconPlus } from "../../../assets";
+import { cartWhite } from "../../../assets";
 import "./RightSide.css";
 
 const RightSide = () => {
