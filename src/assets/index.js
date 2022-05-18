@@ -11,6 +11,7 @@ import imageProduct4 from "./image-product-4.jpg";
 import imageProduct4Tmb from "./image-product-4-thumbnail.jpg";
 import iconMinus from "./icon-minus.svg";
 import iconPlus from "./icon-plus.svg";
+import iconDelete from "./icon-delete.svg";
 
 export {
   cart,
@@ -26,4 +27,5 @@ export {
   imageProduct4Tmb,
   iconMinus,
   iconPlus,
+  iconDelete,
 };
