@@ -37,11 +37,42 @@
   color: hsl(220, 14%, 75%);
   text-decoration: line-through;
 }
+.counter {
+  background-color: hsl(223, 64%, 98%);
+  width: max-content;
+  height: max-content;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.minus-button,
+.plus-button,
+.product-counter {
+  padding: 10px 20px;
+  color: hsl(26, 100%, 55%);
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+.product-counter {
+  font-family: var(--font-main);
+  color: #000;
+  background-color: hsl(223, 64%, 98%);
+}
+.minus-button {
+  background-color: hsl(223, 64%, 98%);
+}
+.plus-button {
+  background-color: hsl(223, 64%, 98%);
+}
 .add-to-cart {
   padding: 15px 40px;
   border: none;
   border-radius: 10px;
   background-color: hsl(26, 100%, 55%);
+  color: #fff;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 .add-to-cart img {
   width: 15px;

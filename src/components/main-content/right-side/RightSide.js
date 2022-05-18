@@ -1,5 +1,5 @@
 import React from "react";
-import { cart } from "../../../assets";
+import { cartWhite, iconMinus, iconPlus } from "../../../assets";
 import "./RightSide.css";
 
 const RightSide = () => {
@@ -15,11 +15,13 @@ const RightSide = () => {
       <span className="current-price">$125.00</span>
       <span className="total-discount">50%</span>
       <span className="product-price">$250.00</span>
-      <button className="minus-button">-</button>
-      <span className="product-counter">0</span>
-      <button className="plus-button">+</button>
+      <div className="counter">
+        <button className="minus-button">-</button>
+        <span className="product-counter">0</span>
+        <button className="plus-button">+</button>
+      </div>
       <button className="add-to-cart">
-        <img src={cart} alt="cart" />
+        <img src={cartWhite} alt="cart" />
         &nbsp; Add to cart
       </button>
     </div>
