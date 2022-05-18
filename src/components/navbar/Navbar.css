@@ -1,4 +1,5 @@
 .navbar-container {
+  position: relative;
   width: 90%;
   max-width: 1225px;
   border-bottom: 1px solid hsl(220, 14%, 75%);

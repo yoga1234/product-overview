@@ -2,6 +2,7 @@ import React from "react";
 import "./Navbar.css";
 
 import { cart, userAvatar } from "../../assets";
+import Cart from "../cart/Cart";
 
 const Navbar = () => {
   return (
@@ -22,6 +23,7 @@ const Navbar = () => {
         <img src={cart} alt="cart product" className="navbar-cart" />
         <img src={userAvatar} alt="user avatar" className="navbar-profile" />
       </div>
+      <Cart />
     </div>
   );
 };
