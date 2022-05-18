@@ -1,10 +1,11 @@
-import React from "react";
+import { useState } from "react";
 import "./Navbar.css";
 
 import { cart, userAvatar } from "../../assets";
 import Cart from "../cart/Cart";
 
 const Navbar = () => {
+  const [cartOpen, setCartOpen] = useState(false);
   return (
     <div className="navbar-container">
       <div className="left-side">
@@ -20,10 +21,15 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="right-side">
-        <img src={cart} alt="cart product" className="navbar-cart" />
+        <img
+          onClick={() => setCartOpen(!cartOpen)}
+          src={cart}
+          alt="cart product"
+          className="navbar-cart"
+        />
         <img src={userAvatar} alt="user avatar" className="navbar-profile" />
       </div>
-      <Cart />
+      <Cart openUi={cartOpen} />
     </div>
   );
 };

@@ -1,10 +1,9 @@
-import React from "react";
-
 import "./Cart.css";
 
-const Cart = () => {
+const Cart = ({ openUi }) => {
   return (
-    <div className="cart-container">
+    <div className={openUi ? "cart-container" : "cart-hidden"}>
+      {/* <div className="cart-container"> */}
       <div className="cart-title">
         <h2>Cart</h2>
       </div>

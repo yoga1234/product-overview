@@ -1,3 +1,6 @@
+.cart-hidden {
+  display: none;
+}
 .cart-container {
   position: absolute;
   right: 0;
