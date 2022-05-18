@@ -6,6 +6,7 @@ import Cart from "../cart/Cart";
 
 const Navbar = () => {
   const [cartOpen, setCartOpen] = useState(false);
+  const [activeMenu, setActiveMenu] = useState("0");
   return (
     <div className="navbar-container">
       <div className="left-side">
@@ -13,11 +14,36 @@ const Navbar = () => {
       </div>
       <div className="middle-side">
         <ul>
-          <li>Collections</li>
-          <li>Men</li>
-          <li>Women</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li
+            onClick={() => setActiveMenu("1")}
+            className={activeMenu === "1" && "active"}
+          >
+            Collections
+          </li>
+          <li
+            onClick={() => setActiveMenu("2")}
+            className={activeMenu === "2" && "active"}
+          >
+            Men
+          </li>
+          <li
+            onClick={() => setActiveMenu("3")}
+            className={activeMenu === "3" && "active"}
+          >
+            Women
+          </li>
+          <li
+            onClick={() => setActiveMenu("4")}
+            className={activeMenu === "4" && "active"}
+          >
+            About
+          </li>
+          <li
+            onClick={() => setActiveMenu("5")}
+            className={activeMenu === "5" && "active"}
+          >
+            Contact
+          </li>
         </ul>
       </div>
       <div className="right-side">

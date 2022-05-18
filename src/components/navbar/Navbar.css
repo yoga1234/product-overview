@@ -39,6 +39,9 @@
 .middle-side > ul > li:active {
   opacity: 50%;
 }
+.middle-side > ul > li.active {
+  border-bottom: 3px solid hsl(26, 100%, 55%);
+}
 .right-side {
   flex: 1;
 }
