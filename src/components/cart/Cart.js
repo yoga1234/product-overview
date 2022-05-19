@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { iconDelete, imageProduct1Tmb } from "../../assets";
 import "./Cart.css";
 
@@ -12,6 +13,8 @@ const checkCart = () => {
 };
 
 const Cart = ({ openUi }) => {
+  const [refresh, setRefresh] = useState(false);
+
   return (
     <div className={openUi === true ? "cart-container" : "cart-hidden"}>
       <div className="cart-title">
@@ -40,7 +43,15 @@ const Cart = ({ openUi }) => {
                 <span className="total-price"> $375.0</span>
               </div>
             </div>
-            <img src={iconDelete} alt="delete" className="cart-delete" />
+            <img
+              onClick={() => {
+                localStorage.clear();
+                setRefresh(!refresh);
+              }}
+              src={iconDelete}
+              alt="delete"
+              className="cart-delete"
+            />
           </div>
           <button className="cart-checkout">Checkout</button>
         </div>
