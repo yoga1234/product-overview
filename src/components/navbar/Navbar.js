@@ -16,31 +16,31 @@ const Navbar = () => {
         <ul>
           <li
             onClick={() => setActiveMenu("1")}
-            className={activeMenu === "1" && "active"}
+            className={activeMenu === "1" ? "active" : ""}
           >
             Collections
           </li>
           <li
             onClick={() => setActiveMenu("2")}
-            className={activeMenu === "2" && "active"}
+            className={activeMenu === "2" ? "active" : ""}
           >
             Men
           </li>
           <li
             onClick={() => setActiveMenu("3")}
-            className={activeMenu === "3" && "active"}
+            className={activeMenu === "3" ? "active" : ""}
           >
             Women
           </li>
           <li
             onClick={() => setActiveMenu("4")}
-            className={activeMenu === "4" && "active"}
+            className={activeMenu === "4" ? "active" : ""}
           >
             About
           </li>
           <li
             onClick={() => setActiveMenu("5")}
-            className={activeMenu === "5" && "active"}
+            className={activeMenu === "5" ? "active" : ""}
           >
             Contact
           </li>

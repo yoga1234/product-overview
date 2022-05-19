@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { cartWhite } from "../../../assets";
 import "./RightSide.css";
 
 const RightSide = () => {
+  const [totalBuy, setTotalBuy] = useState(0);
+
+  const buyHandle = (action) => {
+    if (action === "+") {
+      setTotalBuy(totalBuy + 1);
+    } else if (action === "-") {
+      setTotalBuy(totalBuy - 1);
+    }
+  };
+
   return (
     <div className="right-container">
       <h3 className="company-name">SNEAKER COMPANY</h3>

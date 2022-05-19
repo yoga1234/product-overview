@@ -3,11 +3,8 @@ import "./Cart.css";
 
 const Cart = ({ openUi }) => {
   return (
-    <div
-      className={
-        openUi.toString() === "true" ? "cart-container" : "cart-hidden"
-      }
-    >
+    <div className={openUi === true ? "cart-container" : "cart-hidden"}>
+      {/* <div className="cart-container"> */}
       <div className="cart-title">
         <h2>Cart</h2>
       </div>
