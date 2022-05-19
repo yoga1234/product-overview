@@ -1,0 +1,36 @@
+div.fullimage-overview {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding-top: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.fullimage-main-image img {
+  width: 400px;
+  height: 400px;
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+}
+.fullimage-mini-image {
+  width: max-content;
+  margin: 30px auto 0px auto;
+  display: flex;
+  column-gap: 20px;
+}
+.fullimage-mini-image-overview {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+.fullimage-mini-image img:hover {
+  border: 3px solid hsl(26, 100%, 55%);
+}
+.fullimage-mini-image img:active {
+  opacity: 50%;
+}
+.fullimage-mini-image-overview.active {
+  border: 3px solid hsl(26, 100%, 55%);
+}
