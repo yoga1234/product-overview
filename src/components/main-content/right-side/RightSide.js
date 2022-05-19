@@ -44,7 +44,11 @@ const RightSide = () => {
           </button>
         </div>
         <button
-          onClick={() => localStorageData(totalBuy)}
+          onClick={() =>
+            totalBuy === 0
+              ? alert("Please add some product!")
+              : localStorageData(totalBuy)
+          }
           className="add-to-cart"
         >
           <img src={cartWhite} alt="cart" />
