@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import "./FullImage.css";
 
 import {
+  iconNext,
+  iconPrev,
   imageProduct1,
   imageProduct1Tmb,
   imageProduct2,
@@ -33,6 +35,10 @@ const FullImage = () => {
           alt="main overview"
           className="fullimage-main-image-overview"
         />
+        <div className="arrow-container">
+          <img className="arrow-button" src={iconPrev} alt="order next" />
+          <img className="arrow-button" src={iconNext} alt="order prev" />
+        </div>
       </div>
       <div className="fullimage-mini-image">
         <img
