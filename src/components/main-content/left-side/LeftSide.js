@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import "./LeftSide.css";
 
 import {
@@ -13,11 +13,22 @@ import {
 } from "../../../assets";
 
 const LeftSide = () => {
+  const [imageActive, setImageActive] = useState("1");
+  let mainActive;
+  if (imageActive === "1") {
+    mainActive = imageProduct1;
+  } else if (imageActive === "2") {
+    mainActive = imageProduct2;
+  } else if (imageActive === "3") {
+    mainActive = imageProduct3;
+  } else {
+    mainActive = imageProduct4;
+  }
   return (
     <div className="left-container">
       <div className="main-image">
         <img
-          src={imageProduct1}
+          src={mainActive}
           alt="main overview"
           className="main-image-overview"
         />
@@ -26,22 +37,42 @@ const LeftSide = () => {
         <img
           src={imageProduct1Tmb}
           alt="mini overview"
-          className="mini-image-overview"
+          className={
+            imageActive === "1"
+              ? "mini-image-overview active"
+              : "mini-image-overview"
+          }
+          onClick={() => setImageActive("1")}
         />
         <img
           src={imageProduct2Tmb}
           alt="mini overview"
-          className="mini-image-overview"
+          className={
+            imageActive === "2"
+              ? "mini-image-overview active"
+              : "mini-image-overview"
+          }
+          onClick={() => setImageActive("2")}
         />
         <img
           src={imageProduct3Tmb}
           alt="mini overview"
-          className="mini-image-overview"
+          className={
+            imageActive === "3"
+              ? "mini-image-overview active"
+              : "mini-image-overview"
+          }
+          onClick={() => setImageActive("3")}
         />
         <img
           src={imageProduct4Tmb}
           alt="mini overview"
-          className="mini-image-overview"
+          className={
+            imageActive === "4"
+              ? "mini-image-overview active"
+              : "mini-image-overview"
+          }
+          onClick={() => setImageActive("4")}
         />
       </div>
     </div>

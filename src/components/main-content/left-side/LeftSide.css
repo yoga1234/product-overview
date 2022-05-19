@@ -27,3 +27,10 @@
   opacity: 80%;
   border: 3px solid hsl(26, 100%, 55%);
 }
+.mini-image img:active {
+  opacity: 50%;
+}
+.mini-image-overview.active {
+  opacity: 60%;
+  border: 3px solid hsl(26, 100%, 55%);
+}
