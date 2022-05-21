@@ -12,6 +12,10 @@ import {
   imageProduct4Tmb,
 } from "../../../assets";
 
+const pictureBigHandle = () => {
+  document.querySelector(".fullimage-overview").style.display = "block";
+};
+
 const LeftSide = () => {
   const [imageActive, setImageActive] = useState("1");
   let mainActive;
@@ -26,7 +30,7 @@ const LeftSide = () => {
   }
   return (
     <div className="left-container">
-      <div className="main-image">
+      <div onClick={pictureBigHandle} className="main-image">
         <img
           src={mainActive}
           alt="main overview"

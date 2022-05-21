@@ -16,6 +16,10 @@ import {
   imageProduct4Tmb,
 } from "../../assets";
 
+const closeHandle = () => {
+  document.querySelector(".fullimage-overview").style.display = "none";
+};
+
 const FullImage = () => {
   const [imageActive, setImageActive] = useState("1");
   let mainActive;
@@ -37,7 +41,12 @@ const FullImage = () => {
           className="fullimage-main-image-overview"
         />
         <div className="arrow-container">
-          <img className="icon-close" src={iconCloseWhite} alt="close" />
+          <img
+            onClick={closeHandle}
+            className="icon-close"
+            src={iconCloseWhite}
+            alt="close"
+          />
           <img className="arrow-button" src={iconPrev} alt="order next" />
           <img className="arrow-button" src={iconNext} alt="order prev" />
         </div>

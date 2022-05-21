@@ -3,9 +3,12 @@ div.fullimage-overview {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.75);
   padding-top: 50px;
-  position: absolute;
+  position: fixed;
+  overflow: hidden;
+  display: none;
   top: 0;
   left: 0;
+  transition: all 1s ease;
 }
 
 .fullimage-main-image img {
