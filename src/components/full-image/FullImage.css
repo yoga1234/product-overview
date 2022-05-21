@@ -52,6 +52,7 @@ div.fullimage-overview {
   padding: 15px;
   border-radius: 50%;
   background-color: white;
+  cursor: pointer;
 }
 .fullimage-main-image .arrow-container img.icon-close {
   position: absolute;

@@ -48,8 +48,26 @@ const FullImage = () => {
             src={iconCloseWhite}
             alt="close"
           />
-          <img className="arrow-button" src={iconPrev} alt="order next" />
-          <img className="arrow-button" src={iconNext} alt="order prev" />
+          <img
+            onClick={() => {
+              imageActive <= 1
+                ? setImageActive("4")
+                : setImageActive((Number(imageActive) - 1).toString());
+            }}
+            className="arrow-button"
+            src={iconPrev}
+            alt="order prev"
+          />
+          <img
+            onClick={() => {
+              imageActive >= 4
+                ? setImageActive("1")
+                : setImageActive((Number(imageActive) + 1).toString());
+            }}
+            className="arrow-button"
+            src={iconNext}
+            alt="order next"
+          />
         </div>
       </div>
       <div className="fullimage-mini-image">
