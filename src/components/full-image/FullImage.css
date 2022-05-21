@@ -7,6 +7,7 @@ div.fullimage-overview {
   top: 0;
   left: 0;
 }
+
 .fullimage-main-image img {
   width: 400px;
   height: 400px;
@@ -48,4 +49,18 @@ div.fullimage-overview {
   padding: 15px;
   border-radius: 50%;
   background-color: white;
+}
+.fullimage-main-image .arrow-container img.icon-close {
+  position: absolute;
+  right: 150px;
+  top: -175px;
+  width: 30px;
+  height: 31px;
+  cursor: pointer;
+}
+.fullimage-main-image .arrow-container img.icon-close:hover {
+  opacity: 80%;
+}
+.fullimage-main-image .arrow-container img.icon-close:active {
+  opacity: 50%;
 }

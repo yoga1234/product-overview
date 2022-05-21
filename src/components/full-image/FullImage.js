@@ -5,6 +5,7 @@ import "./FullImage.css";
 import {
   iconNext,
   iconPrev,
+  iconCloseWhite,
   imageProduct1,
   imageProduct1Tmb,
   imageProduct2,
@@ -36,6 +37,7 @@ const FullImage = () => {
           className="fullimage-main-image-overview"
         />
         <div className="arrow-container">
+          <img className="icon-close" src={iconCloseWhite} alt="close" />
           <img className="arrow-button" src={iconPrev} alt="order next" />
           <img className="arrow-button" src={iconNext} alt="order prev" />
         </div>

@@ -14,6 +14,7 @@ import iconPlus from "./icon-plus.svg";
 import iconDelete from "./icon-delete.svg";
 import iconNext from "./icon-next.svg";
 import iconPrev from "./icon-previous.svg";
+import iconCloseWhite from "./icon-close-white.svg";
 
 export {
   cart,
@@ -32,4 +33,5 @@ export {
   iconDelete,
   iconNext,
   iconPrev,
+  iconCloseWhite,
 };
