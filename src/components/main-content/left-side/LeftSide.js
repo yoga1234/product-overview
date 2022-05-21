@@ -14,6 +14,7 @@ import {
 
 const pictureBigHandle = () => {
   document.querySelector(".fullimage-overview").style.display = "block";
+  document.body.style.overflow = "hidden";
 };
 
 const LeftSide = () => {

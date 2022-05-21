@@ -18,6 +18,7 @@ import {
 
 const closeHandle = () => {
   document.querySelector(".fullimage-overview").style.display = "none";
+  document.body.style.overflow = "visible";
 };
 
 const FullImage = () => {
